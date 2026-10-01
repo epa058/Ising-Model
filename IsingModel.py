@@ -1,9 +1,9 @@
 import random
-import matplotlib.pyplot as plt
 import math
+import matplotlib.pyplot as plt
 
 # ---Some constants---
-N = 25 # Size of grid
+N = 25 # Size of grid (N x N grid in 2D; chain of N spins in 1D)
 J = 1 # Coupling strength
 kBT = 2.5 * J # Critical temperature occurs at approximately 2.25~2.27 * J without diagonal contributions and at approximately 5.5 * J with diagonal contributions
 
@@ -94,10 +94,6 @@ array = []
 for i in range(N):
         array.append(0)
 
-# ---Fill the array with spins of -1 and +1 chosen randomly---
-for i in range(N):
-    spin = random.choice([-1, 1])
-    array[i] = spin
 
 # ---Actual Metropolis algorithm implementation---
 for i in range (N * 10000): # Iteration count
