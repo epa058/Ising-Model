@@ -1,6 +1,6 @@
 # Ising-Model
 
-![](https://github.com/epa058/Ising-Model/blob/main/criticalTemperature.png)
+![](criticalTemperature.png)
 
 This Python code simulates the two-dimensional Ising model using the Metropolis algorithm on a square lattice at a given temperature. 
 
